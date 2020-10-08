@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HomePage</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="static\style.css">
+    <style>
+        .centerdiv{
+height:20vh;
+display:flex;
+justify-content: center;
+align-items:center;}
+a{
+height:50px;
+width:50px;
+background-color:#f5f6fa;
+border-radius:50px;
+text-align:center;
+margin:20px;
+box-shadow:1px 4px 2px 2px #dcdde1;
+line-height:60px;
+}
+a i{
+transition: all 0.3s linear;}
+a:hover i{
+transform :scale(1.4);}
+.details{
+margin:5px;
+
+}
+    </style>
+</head>
+<body background="static\ip3.jpg" >
+<h1 align="center" >IPL FIRST INNINGS SCORE PREDICTION</h1>
+<h5 align="center">IPL score prediction using Machine Learning</h5>
+<div class="imagediv"><img src="static\ip1.jpg" alt="" class="img1"></div>
+
+<div class="forms">
+    <form action="{{ url_for('predict') }}" method="post" >
+        <label for="month">Month of Play</label>
+        <select name="month" id="month">
+            <option value="month">Month</option>
+            <option value="January">January</option>
+            <option value="February">February</option>
+            <option value="March">March</option>
+            <option value="April">April</option>
+            <option value="May">May</option>
+            <option value="June">June</option>
+            <option value="July">July</option>
+            <option value="August">August</option>
+            <option value="September">September</option>
+            <option value="October">October</option>
+            <option value="November">November</option>
+            <option value="December">December</option>
+        </select>
+        <label for="batting">Batting Team Name</label>
+        <select name="bat_team" id="batting">
+            <option value="team"> Batting Team</option>
+            <option value="Chennai Super Kings">Chennai Super Kings</option>
+            <option value="Royal Challengers Bangalore">Royal Challengers Bangalore</option>
+            <option value="Rajasthan Royals">Rajasthan Royals</option>
+            <option value="Kolkata Knight Riders">Kolkata Knight Riders</option>
+            <option value="Sunrisers Hyderabad">Sunrisers Hyderabad</option>
+            <option value="Kings XI Punjab">Kings XI Punjab</option>
+            <option value="Delhi Capitals">Delhi Capitals</option>
+            <option value="Mumbai Indians">Mumbai Indians</option>
+
+        </select> <label for="bowling">Bowling Team Name</label>
+        <select name="bowl_team" id="bowling">
+            <option value="team">Bowling Team</option>
+            <option value="Chennai Super Kings">Chennai Super Kings</option>
+            <option value="Royal Challengers Bangalore">Royal Challengers Bangalore</option>
+            <option value="Rajasthan Royals">Rajasthan Royals</option>
+            <option value="Kolkata Knight Rider">Kolkata Knight Riders</option>
+            <option value="Sunrisers Hyderabad">Sunrisers Hyderabad</option>
+            <option value="Kings XI Punjab">Kings XI Punjab</option>
+            <option value="Delhi Capitals">Delhi Capitals</option>
+            <option value="Mumbai Indians">Mumbai Indians</option>
+
+        </select>
+        <label for="overs">Overs</label>
+            <input type="number"name="overs" placeholder="Current Over" autocomplete="off" step=0.1 min="5.1"  max="20"required>
+        <label for="extras">Total Extra Runs Till Now</label>
+            <input type="number"name="extras" placeholder="Extra Runs so Far" autocomplete="off" min="0" required>
+        <label for="runs">Run Scored Till Now</label>
+            <input type="number" name="runs" placeholder="Runs Scored Till Now" autocomplete="off" min="0" required max="300">
+        <label for="wickets">Wicket Fallen</label>
+            <input type="number" name="wickets" placeholder="Wickets Fallen Till Now" autocomplete="off" min="0" max="10"required >
+        <label for="last_runs">Last Five Over Run Scored</label>
+            <input type="number" name="last_runs" placeholder="Last five over score" autocomplete="off" min="0" required>
+        <label for="last_wickets">Last Five over wicket fallen</label>
+            <input type="number" name="last_wickets" placeholder="Last five over wickets" autocomplete="off" min="0" max="10"required >
+         <label for="bats_runs">Current Batsman Run</label>
+            <input type="number" name="bats_runs" placeholder="Batsman Score" autocomplete="off" min="0" required>
+        <input type="submit" value="Submit">
+    </form>
+<div  class="headw">{% with messages=get_flashed_messages() %}
+   {% if messages %}
+     {% for msg in messages %}
+        <h3 align="center" >{{msg}}</h3>
+     {% endfor %}
+   {% endif %}
+{% endwith %}</div>
+ <div class="details" align="center"> <h2>Made with &#10084 by Lucky</h2></div>
+</div>
+
+<div class="centerdiv">
+    <a href="https://m.facebook.com/profile.php" target="_blank">
+        <i class="fa fa-2x fa-facebook" aria-hidden="true"></i>
+    </a>
+    <a href="https://www.instagram.com/lucky__2000/" target="_blank">
+        <i class="fa fa-2x fa-instagram" aria-hidden="true"></i>
+    </a><a href="https://www.linkedin.com/mwlite/in/priyabrata-panda-80485018a" target="_blank">
+      <i class="fa fa-2x fa-github" aria-hidden="true"></i>
+    </a><a href="https://github.com/Priyabrata409" target="_blank">
+<i class="fa fa-2x fa-linkedin" aria-hidden="true"></i> </a>
+
+
+
+</div>
+</body>
+</html>
