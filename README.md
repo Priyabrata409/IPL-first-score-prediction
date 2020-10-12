@@ -36,5 +36,7 @@ As IPL is like a occasion in India,We not only love it but also live it.As we al
 This is simple machine learning model.In this project I have Used [IPL Dataset](https://www.kaggle.com/nowke9/ipldata).This data contains ball by ball data from 2008 to 2019. As this is a messy data it took a long to perform data cleaning,feature engineering and feature transforming.Then I used simple Random Forest as it was giving better than others.Then I saved the model in Pickle file.Then I had to use FLASK which is a micro frame works to create web api.And at last I deployed it on Heroku Cloud Platform
 
 #### Technology Used
-![Python](https://www.google.com/search?q=python+img&rlz=1C1CHBF_enIN899IN899&sxsrf=ALeKk01nR2p1kaOAP2JHzjvbV8ZkP-ipxA:1602507894586&tbm=isch&source=iu&ictx=1&fir=XMETr16AJj820M%252CgRl2UwRFQHCyfM%252C_&vet=1&usg=AI4_-kSl-QPbhTOc7ZofyMBltzzdOvr3Hw&sa=X&ved=2ahUKEwj7w7mOj6_sAhVn8HMBHbPjBbAQ9QF6BAgKEEg#imgrc=XMETr16AJj820M)
-![Flask]()
+![Python](readme_resources/pyimg.jpg "Python")
+![Flask](readme_resources/Flaskimg.png)
+![Sklearn](readme_resources/sklearnimg.png)
+![Gunicorn](readme_resources/Gunicornimg.png)
