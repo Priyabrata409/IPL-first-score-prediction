@@ -5,4 +5,4 @@
 - If you want to view the app
 [click here](https://ipl-first-innings-score-1234.herokuapp.com/)
 - Here is the glimpse of how it looks
-![GIF](readme_resources/)
+![GIF](readme_resources/video-to-gif-converter.gif)
