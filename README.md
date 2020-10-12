@@ -45,10 +45,15 @@ This is simple machine learning model.In this project I have Used [IPL Dataset](
 
 - ![Gunicorn](readme_resources/Gunicornimg.png)
 
-- ![heroku]((readme_resources/)
+- ![heroku]((readme_resources/heroku.png)
 
 
 ### Team
 - Name-Lucky
 
 ![Photo](readme_resources/IMG-20200613-WA0002.jpg)
+
+
+
+### Credits
+Thanks to the Kaggle and Krish Naik whose video inspired me to do this project and a big shout out to Anshuman Debta who helped me to find bugs and also helped in some modification 
