@@ -44,3 +44,11 @@ This is simple machine learning model.In this project I have Used [IPL Dataset](
 - ![Sklearn](readme_resources/sklearnimg.png)
 
 - ![Gunicorn](readme_resources/Gunicornimg.png)
+
+- ![heroku]((readme_resources/)
+
+
+### Team
+- Name-Lucky
+
+![Photo](readme_resources/IMG-20200613-WA0002.jpg)
