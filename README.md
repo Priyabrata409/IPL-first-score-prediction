@@ -45,7 +45,7 @@ This is simple machine learning model.In this project I have Used [IPL Dataset](
 
 - ![Gunicorn](readme_resources/Gunicornimg.png)
 
-- ![heroku]((readme_resources/heroku.png)
+- ![heroku](readme_resources/heroku.png)
 
 
 ### Team
