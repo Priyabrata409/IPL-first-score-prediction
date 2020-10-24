@@ -116,9 +116,11 @@ def predict():
          if res > runs:
            for val in res:
              flash(f"The first innings score will be around {int(val)}","info")
+             return render_template("index.html")
          else:
               flash(f"The first innings score will be around {int(runs)}","info")
+              return render_template("index.html")
 
-         return render_template("index.html")
+         
 if __name__=="__main__":
     app.run(debug=True)
