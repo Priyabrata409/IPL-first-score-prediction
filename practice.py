@@ -113,8 +113,11 @@ def predict():
          a = np.concatenate((a, [[last_wickets]]), axis=1)
          a = np.concatenate((a, [[bats_runs]]), axis=1)
          res = rf.predict(a)
-         for val in res:
+         if res > runs:
+           for val in res:
              flash(f"The first innings score will be around {int(val)}","info")
+         else:
+              flash(f"The first innings score will be around {int(runs)}","info")
 
          return render_template("index.html")
 if __name__=="__main__":
